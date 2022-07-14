@@ -28,8 +28,6 @@ class Database
 
     function tambah_data($nim, $nama, $angkatan, $kode_prodi)
     {
-        // var_dump($nim, $nama, $angkatan, $kode_prodi);
-        // die;
         mysqli_query($this->koneksi, "INSERT INTO mhs (nim, nama_mhs, angkatan, kode_prodi) VALUES ('$nim', '$nama', '$angkatan', '$kode_prodi')");
     }
 
